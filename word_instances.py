@@ -16,4 +16,5 @@ filtered_words = [word for word in words
 words_counts = Counter(filtered_words)
 sorted_word_counts = dict(words_counts.most_common())
 
-print(sorted_word_counts)
+for word, count in sorted_word_counts.items():
+    print(f'{word}: {count}')
